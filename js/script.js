@@ -10,23 +10,23 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 start_btn.onclick = ()=>{
-    info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo");
 }
 
 exit_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
+    info_box.classList.remove("activeInfo");
 }
 
 continue_btn.onclick = ()=>{
-    info_box.classList.remove("activeInfo"); //hide info box
-    quiz_box.classList.add("activeQuiz"); //show quiz box
-    showQuetions(0); //calling showQestions function
-    queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
+    info_box.classList.remove("activeInfo"); 
+    quiz_box.classList.add("activeQuiz");
+    showQuetions(0);
+    queCounter(1);
+    startTimer(20);
+    startTimerLine(0);
 }
 
-let timeValue =  15;
+let timeValue = 20;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -40,7 +40,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz");
     result_box.classList.remove("activeResult");
-    timeValue = 15; 
+    timeValue = 20; 
     que_count = 0;
     que_numb = 1;
     userScore = 0;
