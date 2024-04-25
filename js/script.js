@@ -26,7 +26,7 @@ continue_btn.onclick = ()=>{
     startTimerLine(0);
 }
 
-let timeValue = 20;
+let timeValue = 19;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;

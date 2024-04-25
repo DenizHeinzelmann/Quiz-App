@@ -380,3 +380,11 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+
+/* Media Query für kleinere Bildschirme (z.B. Smartphones) */
+@media (max-width: 768px) {
+    .quiz_box {
+        width: 90%;
+        padding: 15px;
+    }
+}
